@@ -16,10 +16,9 @@ import useFetch from "../../../hook/useFetch";
 const Popularjobs = () => {
   const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
-    query: "Unity developer",
+    query: "React developer",
     num_pages: "1",
   });
-  console.log(data);
 
   const [selectedJob, setSelectedJob] = useState();
 
@@ -39,7 +38,7 @@ const Popularjobs = () => {
 
       <View style={styles.cardsContainer}>
         {isLoading ? (
-          <ActivityIndicator size="large" color={COLORS.primary} />
+          <ActivityIndicator size='large' color={COLORS.primary} />
         ) : error ? (
           <Text>Something went wrong</Text>
         ) : (

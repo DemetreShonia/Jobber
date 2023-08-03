@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
   publisher: (selectedJob, item) => ({
     fontSize: SIZES.medium - 2,
-    fontFamily: FONT.bold,
+    fontFamily: FONT.regular,
     color: selectedJob === item.job_id ? COLORS.white : COLORS.primary,
   }),
   location: {
